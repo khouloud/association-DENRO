@@ -26,12 +26,12 @@ $(function(){
         var scroll = getCurrentScroll();
         if ( scroll >= shrinkHeader ) {
             $('.nav-nav').addClass('shrink');
-            $('#logo img').first().attr("src",'images/logo%20coco.png');
+            $('#logo img').first().attr("src",'images/logo.png');
             console.log("#logo img");
         }
         else {
             $('.nav-nav').removeClass('shrink');
-            $('#logo img').first().attr("src",'images/logo%20cocob.png');
+            $('#logo img').first().attr("src",'images/logo.png');
 
         }
     });
