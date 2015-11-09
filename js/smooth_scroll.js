@@ -7,8 +7,7 @@ $(document).ready(function(){
         var lien = this.hash;
         var $lien = $(lien);
         $('a[href^="#"]').css("border","none");
-        $(this).css("border-bottom","1px solid red");
-        /*$("#nav ul li").css("border-bottom","red");*/
+        $(this).css("border-bottom","1px solid #f0525b");
 
         $('html, body').stop().animate({
             'scrollTop': $lien.offset().top

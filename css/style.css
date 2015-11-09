@@ -78,21 +78,19 @@ p {
     margin-top: 1.2em;
     margin-left: 18em;
     display: block;
+    float: left;
 
 }
 
 /* Nav */
 
 #nav {
-    position: absolute;
-    right: 20em;
-    top: 1em;
-    height: 3em;
-   /* line-height: 3em;*/
+
+   /* line-hei*/
 }
 
 #nav ul {
-    margin: 20px 20px 0 0;
+    margin-top: 2%;
 }
 
 #nav ul li {
@@ -106,8 +104,8 @@ p {
 /*BOUTON FAIRE UN DON*/
 
 #nav ul li:last-child {
-    border: 2px solid red;
-    background: red;
+    border: 2px solid #f0525b;
+    background: #f0525b;
     border-radius: 25px;
 }
 
@@ -230,7 +228,35 @@ p {
     color:#777;
 }
 
+
+
 /*about*/
+img[alt="separateur"]{
+    margin-left: 40%;
+}
+.para{
+    display: block;
+    width: 70%;
+    float: right;
+}
+
+.image{
+    display: block;
+    width: 15%;
+    height: 10%;
+    float: left;
+    margin-right: 5em;
+}
+
+/*
+div img[alt="nous"]{
+    display: block;
+    width: 15%;
+    height: 10%;
+    float: left;
+    margin-right: 5em;
+}
+*/
 
 #about {
     background: #fff;
@@ -239,14 +265,14 @@ p {
     overflow: hidden;
 }
 
-#about h1 {
+#about h1,h2 {
     font: 18px/24px 'lato', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
 }
 
-#about h1 span {
+#about h1,h2 span {
     color: #A0A0A0;
 /*    border-bottom: 3px solid red;*/
     padding-bottom: 6px;
@@ -254,7 +280,7 @@ p {
 
 #about h3 {
     font: 25px/30px 'lato', sans-serif;
-    color: #919191;
+    color: #f0525b;
 
 }
 
