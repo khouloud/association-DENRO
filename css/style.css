@@ -46,17 +46,21 @@ img.size{
 
 .slider {
     height: 100%;
-   margin-top: 6em;
+   margin-top: 2em;
     overflow: hidden;
     position: relative;
     width: 100%;
+}
+.slider ul{
+    padding: 0;
+    margin: 0;
 }
 
 .slider li {
     display: none;
     position: absolute;
     width: 100%;
-    margin-left: 0!important;
+    /*margin-left: 0!important;*/
 }
 
 p {
@@ -71,8 +75,8 @@ p {
 #logo img {
     width: 7%;
     height: 7%;
-    margin-top: 1em;
-    margin-left: 22em;
+    margin-top: 1.2em;
+    margin-left: 18em;
     display: block;
 
 }
@@ -82,7 +86,7 @@ p {
 #nav {
     position: absolute;
     right: 20em;
-    top: 2em;
+    top: 1em;
     height: 3em;
    /* line-height: 3em;*/
 }
@@ -99,6 +103,13 @@ p {
     color: white;
 }
 
+/*BOUTON FAIRE UN DON*/
+
+#nav ul li:last-child {
+    border: 2px solid red;
+    background: red;
+    border-radius: 25px;
+}
 
 #nav ul li a {
     display: block;
@@ -110,6 +121,8 @@ p {
     outline: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 1.2em;
+
 
 }
 
@@ -121,28 +134,29 @@ p {
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     transition: height 0.3s;
+    border-bottom: solid white 1px;
 
 }
 .nav-nav.shrink li{
-    color: black;
+    color: white;
 }
 
 .nav-nav.shrink {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(142,186,121,0.8);
 }
 
 .nav-nav{
-    background:transparent;
+    background:rgb(142,186,121);
     color:#fff;
     box-shadow:0 0 0px transparent;
 
 }
 
 .nav-nav.shrink #nav ul li a{
-    color: grey;
+    color: white;
 }
 
 .nav-nav.shrink .navbar-toggle{
@@ -234,7 +248,7 @@ p {
 
 #about h1 span {
     color: #A0A0A0;
-    border-bottom: 3px solid #77FFFF;
+/*    border-bottom: 3px solid red;*/
     padding-bottom: 6px;
 }
 
@@ -274,7 +288,7 @@ p.info {
 
 #work h1 span {
     color: #A0A0A0;
-    border-bottom: 3px solid #77FFFF;
+    /*border-bottom: 3px solid #77FFFF;*/
     padding-bottom: 6px;
 }
 
@@ -293,196 +307,6 @@ p.info {
 
 /* skill bars */
 
-.bars {
-    width: 95%;
-    float: left;
-    padding-top: 10px;
-    text-align: left;
-
-}
-
-.bars .skills {
-    margin-top: 36px;
-    list-style: none;
-    color: #919191;
-
-}
-
-.bars li {
-    position: relative;
-    margin-bottom: 60px;
-    background: #ccc;
-    height: 42px;
-    border-radius: 3px;
-
-}
-
-.bars li em {
-    font: 15px 'lato', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: normal;
-    position: relative;
-    top: -36px;
-}
-
-.bar-expand {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding-right: 24px;
-    background: #BCF1F5;
-    display: inline-block;
-    height: 42px;
-    line-height: 42px;
-    border-radius: 3px 0 0 3px;
-}
-
-.photoshop {
-    width: 60%;
-    -moz-animation: photoshop 2s ease;
-    -webkit-animation: photoshop 2s ease;
-}
-
-.illustrator {
-    width: 55%;
-    -moz-animation: illustrator 2s ease;
-    -webkit-animation: illustrator 2s ease;
-}
-
-.wordpress {
-    width: 50%;
-    -moz-animation: wordpress 2s ease;
-    -webkit-animation: wordpress 2s ease;
-}
-
-.css {
-    width: 90%;
-    -moz-animation: css 2s ease;
-    -webkit-animation: css 2s ease;
-}
-
-.html5 {
-    width: 80%;
-    -moz-animation: html5 2s ease;
-    -webkit-animation: html5 2s ease;
-}
-
-.jquery {
-    width: 50%;
-    -moz-animation: jquery 2s ease;
-    -webkit-animation: jquery 2s ease;
-}
-
-@-moz-keyframes photoshop {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@-moz-keyframes illustrator {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 55%;
-    }
-}
-
-@-moz-keyframes wordpress {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-moz-keyframes css {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@-moz-keyframes html5 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@-moz-keyframes jquery {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-webkit-keyframes photoshop {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@-webkit-keyframes illustrator {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 55%;
-    }
-}
-
-@-webkit-keyframes wordpress {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-webkit-keyframes css {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@-webkit-keyframes html5 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@-webkit-keyframes jquery {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
-
-}
 
 /*  Work */
 
@@ -636,7 +460,7 @@ ul.filter li a.active {
 
 #contact h1 span {
     color: #A0A0A0;
-    border-bottom: 3px solid #77FFFF;
+    /*border-bottom: 3px solid #77FFFF;*/
     padding-bottom: 6px;
 }
 
@@ -681,8 +505,12 @@ iframe{
 }
 /* Form Layout */
 
+.form-wrapper form{
+    margin: 10em;
+}
+
 .form-wrapper {
-    display: inline-block;
+    display: inline;
     height: 300px;
     width: 500px;
     overflow: hidden;
@@ -733,7 +561,7 @@ h1 {
 }
 
 .button-panel .button {
-    background: #77ffff;
+    background: rgb(142,186,121);
     border: none;
     color: #fff;
     cursor: pointer;

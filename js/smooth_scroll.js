@@ -6,11 +6,16 @@ $(document).ready(function(){
 
         var lien = this.hash;
         var $lien = $(lien);
+        $('a[href^="#"]').css("border","none");
+        $(this).css("border-bottom","1px solid red");
+        /*$("#nav ul li").css("border-bottom","red");*/
 
         $('html, body').stop().animate({
             'scrollTop': $lien.offset().top
         }, 900, 'swing', function () {
+
             window.location.hash = lien;
+
         });
     });
 });
@@ -48,9 +53,11 @@ $(window).scroll(function () {
             .scrollTop() > 100) {
         $('.scrollToTop')
             .fadeIn();
+
     } else {
         $('.scrollToTop')
             .fadeOut();
+
     }
 });
 
