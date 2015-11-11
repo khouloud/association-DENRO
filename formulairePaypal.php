@@ -23,7 +23,7 @@
      <!--Indication du type d'action -->
     <input name="cmd" type="hidden" value="_xclick" />
      <!--Indication de l'adresse e-mail test du vendeur (a remplacer par l'e-mail de votre compte Paypal en production) -->
-    <input name="business" type="hidden" value="omar.boach-facilitator@gmail.com" />
+    <input name="business" type="hidden" value="khouloudbenmim-facilitator@gmail.com" />
      <!--Indication du libellé de la commande qui apparaitra sur Paypal -->
     <input name="item_name" type="hidden" value="Le texte que vous voulez" />
      <!--Indication permettant à l'acheteur de laisser un message lors du paiement -->
