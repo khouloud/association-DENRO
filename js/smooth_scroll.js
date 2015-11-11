@@ -1,6 +1,16 @@
 //fonction eb jquerry qui permet de scroller vers le lien qui commence par un #
 
 $(document).ready(function(){
+    /*pop up*/
+        $("button").click(function () {
+            $(".pop").fadeIn(300);
+            positionPopup();
+        });
+
+        $(".pop > span, .pop").click(function () {
+            $(".pop").fadeOut(300);
+        });
+    /*fin pop up*/
     $('a[href^="#"]').on('click',function (elem) {
         elem.preventDefault();
 
@@ -108,5 +118,10 @@ jQuery(function($) {
         }
         , $transition_time +  $time_between_slides
     );
+
+});
+
+//////////////////////////pop up ///////////////////////////
+$(document).ready(function () {
 
 });

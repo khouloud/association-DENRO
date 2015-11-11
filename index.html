@@ -1,11 +1,9 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0" >
+    <meta name="viewport" content="">
     <title>Association Denro</title>
-
 
     <!-- link style css -->
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
@@ -13,38 +11,29 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Js -->
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<script src="js/smooth_scroll.js"></script>
+    <script src="js/smooth_scroll.js"></script>
     <script src="js/map.js"></script>
     <script src="js/formulaire.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?AIzaSyDA4KnALkrt2vsBlyOh9xO_te8a-kCPodc">
-
-
-    </script>
+    <script src="http://maps.googleapis.com/maps/api/js?AIzaSyDA4KnALkrt2vsBlyOh9xO_te8a-kCPodc"></script>
 
     <!-- Favicon -->
-
-
     <link rel="shortcut icon" href="images/favicon.png">
-	
-
 </head>
 
 <body>
-<!--section home-->
+
+<!--home-->
 <section id="home">
 
-    <!-- Header navigation -->
-
+    <!-- header navigation -->
     <header id="header">
-
         <div class="nav-nav">
             <div id="logo"><img id="logo2" src="images/logo.png" alt="logo DENRO"/>
             </div>
-
-
             <nav id="nav">
                 <ul>
                     <li><a href="#header">Accueil</a>
@@ -57,125 +46,131 @@
                     </li>
                     <li><a href="don.php">Faire un Don</a>
                     </li>
-
                 </ul>
-
             </nav>
-
         </div>
-
-
     </header>
+
     <div class="slider">
         <ul>
-            <li><img class="size" src="images/fond/slider1.jpg" alt="" /></li>
-            <li><img class="size" src="images/fond/slider2.jpg" alt="" /></li>
+            <li><img class="size" src="images/fond/slider1.jpg" alt=""/></li>
+            <li><img class="size" src="images/fond/slider2.jpg" alt=""/></li>
             <li><img class="size" src="images/fond/slider3.jpg" alt=""/></li>
-
         </ul>
     </div>
-
-    <!-- FIN Header navigation -->
-    <!-- BTN Carousel-->
-
+    <!-- end header navigation -->
 
     <div class="main-col">
         <div class="row item">
             <div class="columns">
+                <div class="jumbotron">
+                    <h1>My First Bootstrap Page</h1>
 
-        </div>
+                    <p>Resize this responsive page to see the effect!</p>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- main-col end -->
+
 </section>
+<!--end home-->
+
 <!-- about Section -->
 <section id="about">
-            <!-- scolarité-->
-            <div class="row education">
-                <div class="header-col">
-                    <!--<h1><span>A Propos</span></h1>-->
-                    <h2><span>A propos </span></h2>
+    <!-- scolarité-->
+    <div class="row education">
+        <div class="header-col">
+            <h1><span>A Propos De Denro </span></h1>
+        </div>
+
+        <div class="main-col">
+            <div class="row item">
+                <div class="columns">
+                    <h3>Qui somme nous</h3>
+                    <div id="nous">
+                        <div class="image"><img src="images/nous.jpg" alt="nous"></div>
+                        <div class="para">
+                            <p>
+                                L'association Denro, créée le 29 janvier 2012 à Koudougou, Burkina Faso, est une
+                                organisation apolitique
+                                et à but non lucratif qui s'appuie sur un partenariat fort entre le Burkina Faso, la
+                                France et le Québec.
+                                Fondée par monsieur Romuald Yaméogo, joueur professionnel et entraîneur de football
+                                reconnu dans la ville de Koudougou,
+                                mais également en France et au Québec, l’association a su développer des partenariats
+                                solides avec des professionnels
+                                français et canadiens impliqués dans les domaines de l’éducation, de l’intervention
+                                sociale et de la coopération internationale.
+                                Ces partenaires sont aujourd’hui membres de l’Association DENRO.
+
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="main-col">
-                    <div class="row item">
-                        <div class="columns">
+            </div>
 
-                            <h3>Qui somme nous</h3>
-                                <div id="nous">
+            <h3>Notre Mission</h3>
 
-                                    <div class="image"><img src="images/nous.jpg" alt="nous"> </div>
-                                    <div class="para">
-                                        <p>
-                                        L'association Denro, créée le 29 janvier 2012 à Koudougou, Burkina Faso, est une organisation apolitique
-                                        et à but non lucratif qui s'appuie sur un partenariat fort entre le Burkina Faso, la France et le Québec.
-                                        Fondée par monsieur Romuald Yaméogo, joueur professionnel et entraîneur de football reconnu dans la ville de Koudougou,
-                                        mais également en France et au Québec, l’association a su développer des partenariats solides avec des professionnels
-                                        français et canadiens impliqués dans les domaines de l’éducation, de l’intervention sociale et de la coopération internationale.
-                                        Ces partenaires sont aujourd’hui membres de l’Association DENRO.
-                                    </p>
-                                    </div>
-                                </div>
-
-                        </div>
-                    </div>
-
-                                <h3>Notre Mission</h3>
-                                <div class="image"> <img src="images/mission.jpg" alt="mission"> </div>
-                                <p>
-                                    L'association a pour visée sociale la promotion de l'éducation de la jeunesse défavorisée du Burkina Faso au travers l'éducation formelle,
-                                    le sport et l'apprentissage d'un métier en vue d’une meilleure insertion de ces jeunes dans la société et le marché du travail burkinabé.
-                                    Le projet Boomerang par le sport, axé sur la mise en place d’une école sport-études à Koudougou, est aujourd’hui le projet-pivot
-                                    de l’Association DENRO pour l’accomplissement de sa mission.
-                                </p>
+            <div class="image"><img src="images/mission.jpg" alt="mission"></div>
+            <p>
+                L'association a pour visée sociale la promotion de l'éducation de la jeunesse défavorisée du Burkina
+                Faso au travers l'éducation formelle,
+                le sport et l'apprentissage d'un métier en vue d’une meilleure insertion de ces jeunes dans la société
+                et le marché du travail burkinabé.
+                Le projet Boomerang par le sport, axé sur la mise en place d’une école sport-études à Koudougou, est
+                aujourd’hui le projet-pivot
+                de l’Association DENRO pour l’accomplissement de sa mission.
+            </p>
 
 
-                        </div>
-                    </div>
-                    <!-- item end -->
-        <!-- main-col end -->
+        </div>
+    </div>
+    <!-- item end -->
+    <!-- main-col end -->
     <!-- End Education -->
 
-<!--  Skills -->
+    <!--  Skills -->
 
     <div class="row skill">
 
         <div class="header-col">
             <h1><span>Compétences</span></h1>
         </div>
-            <div class="bars">
+        <div class="bars">
 
-              <!--  <ul class="skills">
-                    <li><span class="bar-expand photoshop"></span><em>Photoshop</em>
-                    </li>
-                    <li><span class="bar-expand illustrator"></span><em>Illustrator</em>
-                    </li>
-                    <li><span class="bar-expand wordpress"></span><em>Wordpress</em>
-                    </li>
-                    <li><span class="bar-expand css"></span><em>CSS</em>
-                    </li>
-                    <li><span class="bar-expand html5"></span><em>HTML5</em>
-                    </li>
-                    <li><span class="bar-expand jquery"></span><em>jQuery</em>
-                    </li>
-                </ul>-->
-
-            </div>
-            <!-- end skill-bars -->
+            <!--  <ul class="skills">
+                  <li><span class="bar-expand photoshop"></span><em>Photoshop</em>
+                  </li>
+                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em>
+                  </li>
+                  <li><span class="bar-expand wordpress"></span><em>Wordpress</em>
+                  </li>
+                  <li><span class="bar-expand css"></span><em>CSS</em>
+                  </li>
+                  <li><span class="bar-expand html5"></span><em>HTML5</em>
+                  </li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em>
+                  </li>
+              </ul>-->
 
         </div>
-        <!-- main-col end -->
+        <!-- end skill-bars -->
+
+    </div>
+    <!-- main-col end -->
 
     <!-- End skills -->
 </section>
 
-    <!-- Work section -->
+<!-- Work section -->
 <section id="work">
     <div class="row work">
 
         <div class="header-col">
             <h1><span>Actualite</span></h1>
         </div>
+
 
         <div class=" main-col">
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
@@ -188,15 +183,26 @@
             <ul class="works-container triggerAnimation animated" data-animate="bounceIn">
 
                 <li class="work-post identity">
+
                     <img alt="1ère Rentrée Scolaire" src="images/upload/work1.jpg">
-                    <a href="project-single.html" class="hover-box">
+                    <a href="" class="hover-box">
                         <div class="inner-hover">
                             <h2>1ère Rentrée Scolaire</h2>
-                            <span>Detail</span>
+                            <section class="sec">
+                                <button class="reg b">Detail</button>
+                            </section>
                         </div>
                     </a>
                 </li>
+                <!--/************le pop up detail***********/-->
+                <div class="pop">
+                    <span>✖</span>
 
+                    <h1>jQuery Pop Up</h1>
+
+                    <p>This is a random pop up, hopefully its not annoying.</p>
+                </div>
+                <!--/***************fin pop up***************/-->
                 <li class="work-post web-design web-development">
                     <img alt="" src="images/upload/work2.jpg">
                     <a href="project-single.html" class="hover-box">
@@ -319,25 +325,25 @@
                 <form>
                     <div class="form-item">
                         <label for="name"></label>
-                        <input type="name" name="name" required="required" placeholder="nom"></input>
+                        <input type="name" name="name" required="required" placeholder="nom">
                     </div>
                     <div class="form-item">
                         <label for="email"></label>
-                        <input type="email" name="email" required="required" placeholder="email"></input>
+                        <input type="email" name="email" required="required" placeholder="email">
                     </div>
                     <div class="form-item">
                         <label for="Message"></label>
                         <textarea type="text" name="text" required="required" placeholder="text"></textarea>
                     </div>
                     <div class="button-panel">
-                        <input type="submit" class="button" title="Envoyez" value="Envoyez"></input>
+                        <input type="submit" class="button" title="Envoyez" value="Envoyez">
                     </div>
                 </form>
             </div>
 
             <!-- Google Map-->
             <div id="googleMap">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2795.4817636847333!2d-73.56964574868773!3d45.5205099954886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1440010239923"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2795.4817636847333!2d-73.56964574868773!3d45.5205099954886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1440010239923"
                         frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
@@ -364,7 +370,6 @@
 <!-- end Footer-->
 
 
-
 <!-- Scrolltotop-->
 
 <a href="#home" class="scrollToTop"><i class="fa fa-chevron-up"></i>
@@ -379,10 +384,13 @@
     _gaq.push(['_setAccount', 'UA-1965499-1']);
     _gaq.push(['_trackPageview']);
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
     })();
 </script>
 </body>
