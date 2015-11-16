@@ -48,48 +48,23 @@
 
 <header id="header">
 
-    <div class="nav-nav">
-        <div id="logo"><img id="logo2" src="images/logo.png" alt="logo DENRO"/>
-        </div>
-
-
-        <nav id="nav">
-            <ul>
-                <li><a href="#header">Accueil</a>
-                </li>
-                <li><a href="#about">A propos</a>
-                </li>
-                <li><a href="#work">Actualite</a>
-                </li>
-                <li><a href="#contact">Contact</a>
-                </li>
-                <li><a href="don.php">Faire un Don</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-
 </header>
 
 <!--    formulaire inscription-->
 
 <form method="post" action="doRegister.php">
 
-    <h3>Create New Account</h3>
+    <h3>Créer Un Nouveau Compte</h3>
 
-    <input type="text" class="contentformulaire titreformulaire" placeholder="First Name" name="fistname"
+    <input type="text" class="contentformulaire titreformulaire" placeholder="Prénom" name="fistname"
            required="required">
 
-    <input type="text" class="contentformulaire titreformulaire" placeholder="Last Name" name="lastname"
+    <input type="text" class="contentformulaire titreformulaire" placeholder="Nom" name="lastname"
            required="required">
 
     <input type="text" class="contentformulaire" placeholder="Email" name="email" required="required">
 
-    <input id="password" class="contentformulaire" type="password" name="pwd" placeholder="Password"
+    <input id="password" class="contentformulaire" type="password" name="pwd" placeholder="Mot De Passe"
            required="required">
 
     <input class="contentformulaire" id="createAccount" type="submit" value="Create new account" required="required">
@@ -98,26 +73,6 @@
 
 </form>
 
-
-<!--        ///////////////////////////-->
-
-
-
-<!-- Footer-->
-<footer id="footer">
-    <ul class="lists">
-        <li><a href="#"><span class="label">Twitter</span></a></li>
-        <li><a href="#"><span class="label">Facebook</span></a></li>
-        <li><a href="#"><span class="label">Instagram</span></a></li>
-        <li><a href="#"><span class="label">Dribbble</span></a></li>
-        <li><a href="#"><span class="label">Email</span></a></li>
-    </ul>
-    <ul class="copyright">
-        <li>&copy; Untitled</li>
-        <li>Design: <a href="">KHOULOUD</a></li>
-    </ul>
-</footer>
-<!-- end Footer-->
 </body>
 
 </html>

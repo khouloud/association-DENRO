@@ -1,16 +1,6 @@
 //fonction eb jquerry qui permet de scroller vers le lien qui commence par un #
 
 $(document).ready(function(){
-    /*pop up*/
-        $("button").click(function () {
-            $(".pop").fadeIn(300);
-            positionPopup();
-        });
-
-        $(".pop > span, .pop").click(function () {
-            $(".pop").fadeOut(300);
-        });
-    /*fin pop up*/
     $('a[href^="#"]').on('click',function (elem) {
         elem.preventDefault();
 
@@ -41,7 +31,6 @@ $(function(){
         if ( scroll >= shrinkHeader ) {
             $('.nav-nav').addClass('shrink');
             $('#logo img').first().attr("src",'images/logo.png');
-            console.log("#logo img");
         }
         else {
             $('.nav-nav').removeClass('shrink');
@@ -122,6 +111,3 @@ jQuery(function($) {
 });
 
 //////////////////////////pop up ///////////////////////////
-$(document).ready(function () {
-
-});

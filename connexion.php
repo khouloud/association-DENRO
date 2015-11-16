@@ -12,7 +12,7 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     $pwd = $_POST['password'];
 
 
-    $connexion = new mysqli('localhost', 'root', '', 'assocation');
+    $connexion = new mysqli('localhost', 'root', '', 'association');
     if ($connexion->connect_errno) {
         echo 'Erreur de connexion';
 
@@ -21,11 +21,11 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     $res = $connexion->query($requete);
 
     if ($res && ($res->num_rows > 0)) {
-        echo 'connexion reussie';
+        header('location:formulairePaypal.php');
         if (isset($_SESSION["PANIER"])) {
             $a = json_decode($_SESSION['PANIER'], true);
             if (count($a) > 0) {
-                header("location:don.php");
+                header("location:.php");
             } else {
                 header("location:login.php");
             }

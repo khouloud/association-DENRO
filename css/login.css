@@ -2,6 +2,19 @@ body {
     margin: 0;
 }
 
+#logo, #alogo {
+    margin-top: -15%;
+}
+#logo img {
+    width: 13%;
+    margin-top: 0.6em;
+    margin-left: 9em;
+    display: block;
+}
+
+.les2{
+    margin-top: 10%;
+}
 .formulaireLogin {
     text-align: center;
     height: 187px;
@@ -32,7 +45,7 @@ body {
 
 .formulaireLogin a {
     -webkit-appearance: none;
-    background-color: rgb(22, 152, 208);
+    background-color: #f35a5c;
     border-radius: 4px;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
@@ -56,7 +69,7 @@ body {
 }
 
 .formulaireLogin a:hover {
-    background-color: #144567;
+    background-color: #ef2b2d;
 }
 
 #connexion {
@@ -85,7 +98,7 @@ body {
 #signin {
 
     -webkit-appearance: none;
-    background-color: rgb(22, 152, 208);
+    background-color: #f35a5c;
     border-radius: 4px;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
@@ -110,11 +123,35 @@ body {
 }
 
 #signin:hover {
-    background-color: #144567;
+    background-color: #ef2b2d;
 }
 
-#login:required {
-
+form {
+    padding: 3%;
+    text-align: center;
+    margin: 0 auto;
 }
-
-
+.don{
+    -webkit-appearance: none;
+    background-color: #ef2b2d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    width: 370px;
+    border: none;
+}

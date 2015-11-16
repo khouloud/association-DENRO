@@ -1,3 +1,17 @@
+<?php
+ob_start();
+//var_dump($_POST);
+session_start();
+//include du header
+//include 'form_contact_validation.php';
+define('PINSCRI', 'inscri');
+define('PNOM', 'nom');
+define('PEMAIL', 'email');
+define('PASS', 'mdp');
+require_once 'form_contact_validation.php';
+include 'formcontact.php';
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -7,13 +21,14 @@
 
     <!-- link style css -->
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Js -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/smooth_scroll.js"></script>
     <script src="js/map.js"></script>
@@ -31,6 +46,7 @@
 
     <!-- header navigation -->
     <header id="header">
+        <div id="barreHeader"></div>
         <div class="nav-nav">
             <div id="logo"><img id="logo2" src="images/logo.png" alt="logo DENRO"/>
             </div>
@@ -44,7 +60,7 @@
                     </li>
                     <li><a href="#contact">Contact</a>
                     </li>
-                    <li><a href="don.php">Faire un Don</a>
+                    <li><a href="login.php">Faire un Don</a>
                     </li>
                 </ul>
             </nav>
@@ -56,21 +72,13 @@
             <li><img class="size" src="images/fond/slider1.jpg" alt=""/></li>
             <li><img class="size" src="images/fond/slider2.jpg" alt=""/></li>
             <li><img class="size" src="images/fond/slider3.jpg" alt=""/></li>
+            <li><img class="size" src="images/fond/slider4.jpg" alt=""/></li>
+            <li><img class="size" src="images/fond/slider5.jpg" alt=""/></li>
+            <!--<li><img class="size" src="images/fond/slider6.jpg" alt=""/></li>-->
         </ul>
     </div>
     <!-- end header navigation -->
 
-    <div class="main-col">
-        <div class="row item">
-            <div class="columns">
-                <div class="jumbotron">
-                    <h1>My First Bootstrap Page</h1>
-
-                    <p>Resize this responsive page to see the effect!</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </section>
 <!--end home-->
@@ -78,87 +86,90 @@
 <!-- about Section -->
 <section id="about">
     <!-- scolarité-->
-    <div class="row education">
-        <div class="header-col">
-            <h1><span>A Propos De Denro </span></h1>
-        </div>
 
-        <div class="main-col">
-            <div class="row item">
-                <div class="columns">
-                    <h3>Qui somme nous</h3>
-                    <div id="nous">
-                        <div class="image"><img src="images/nous.jpg" alt="nous"></div>
-                        <div class="para">
-                            <p>
-                                L'association Denro, créée le 29 janvier 2012 à Koudougou, Burkina Faso, est une
-                                organisation apolitique
-                                et à but non lucratif qui s'appuie sur un partenariat fort entre le Burkina Faso, la
-                                France et le Québec.
-                                Fondée par monsieur Romuald Yaméogo, joueur professionnel et entraîneur de football
-                                reconnu dans la ville de Koudougou,
-                                mais également en France et au Québec, l’association a su développer des partenariats
-                                solides avec des professionnels
-                                français et canadiens impliqués dans les domaines de l’éducation, de l’intervention
-                                sociale et de la coopération internationale.
-                                Ces partenaires sont aujourd’hui membres de l’Association DENRO.
 
-                            </p>
-                        </div>
-                    </div>
+    <div class="main-col">
 
-                </div>
+
+        <div class="row">
+
+            <div class="col-sm-10 ">
+                <h3>Qui Somme Nous?</h3>
+
+                <p>
+                    L'association Denro, créée le 29 janvier 2012 à Koudougou, Burkina Faso, est une
+                    organisation apolitique
+                    et à but non lucratif qui s'appuie sur un partenariat fort entre le Burkina Faso, la
+                    France et le Québec.
+                    Fondée par monsieur Romuald Yaméogo, joueur professionnel et entraîneur de football
+                    reconnu dans la ville de Koudougou,
+                    mais également en France et au Québec, l’association a su développer des partenariats
+                    solides avec des professionnels
+                    français et canadiens impliqués dans les domaines de l’éducation, de l’intervention
+                    sociale et de la coopération internationale.
+                    Ces partenaires sont aujourd’hui membres de l’Association DENRO.
+
+                </p>
             </div>
 
-            <h3>Notre Mission</h3>
 
-            <div class="image"><img src="images/mission.jpg" alt="mission"></div>
-            <p>
-                L'association a pour visée sociale la promotion de l'éducation de la jeunesse défavorisée du Burkina
-                Faso au travers l'éducation formelle,
-                le sport et l'apprentissage d'un métier en vue d’une meilleure insertion de ces jeunes dans la société
-                et le marché du travail burkinabé.
-                Le projet Boomerang par le sport, axé sur la mise en place d’une école sport-études à Koudougou, est
-                aujourd’hui le projet-pivot
-                de l’Association DENRO pour l’accomplissement de sa mission.
-            </p>
+            <div class="col-sm-10">
+                <h3>Notre Mission</h3>
 
+                <p>
+                    L'association a pour visée sociale la promotion de l'éducation de la jeunesse défavorisée du Burkina
+                    Faso au travers l'éducation formelle,
+                    le sport et l'apprentissage d'un métier en vue d’une meilleure insertion de ces jeunes dans la
+                    société
+                    et le marché du travail burkinabé.
+                    Le projet Boomerang par le sport, axé sur la mise en place d’une école sport-études à Koudougou, est
+                    aujourd’hui le projet-pivot
+                    de l’Association DENRO pour l’accomplissement de sa mission.
+                </p>
+            </div>
+            <div class="col-sm-10 ">
+            <h3>Fondateurs</h3>
 
+            <ul id="person">
+                <li>
+                    <figure>
+                        <img src="images/equipe/p1.png" alt="" />
+                        <figcaption>Romuald Yaméogo</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/equipe/p2.png" alt="" />
+                        <figcaption>Julien Tougouri </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/equipe/p3.png" alt="" />
+                        <figcaption>Paul Lavoie</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/equipe/p4.png" alt="" />
+                        <figcaption>Denise Fernandez </figcaption>
+                    </figure>
+                </li>
+            </ul>
+</div>
+</div>
         </div>
+
+
     </div>
+
+<!--zbouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuub-->
     <!-- item end -->
     <!-- main-col end -->
     <!-- End Education -->
 
     <!--  Skills -->
 
-    <div class="row skill">
-
-        <div class="header-col">
-            <h1><span>Compétences</span></h1>
-        </div>
-        <div class="bars">
-
-            <!--  <ul class="skills">
-                  <li><span class="bar-expand photoshop"></span><em>Photoshop</em>
-                  </li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em>
-                  </li>
-                  <li><span class="bar-expand wordpress"></span><em>Wordpress</em>
-                  </li>
-                  <li><span class="bar-expand css"></span><em>CSS</em>
-                  </li>
-                  <li><span class="bar-expand html5"></span><em>HTML5</em>
-                  </li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em>
-                  </li>
-              </ul>-->
-
-        </div>
-        <!-- end skill-bars -->
-
-    </div>
-    <!-- main-col end -->
 
     <!-- End skills -->
 </section>
@@ -173,36 +184,20 @@
 
 
         <div class=" main-col">
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
-                elit.
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat </p>
-
 
             <ul class="works-container triggerAnimation animated" data-animate="bounceIn">
 
                 <li class="work-post identity">
 
                     <img alt="1ère Rentrée Scolaire" src="images/upload/work1.jpg">
-                    <a href="" class="hover-box">
+                    <a href="scolaire.html" class="hover-box">
                         <div class="inner-hover">
                             <h2>1ère Rentrée Scolaire</h2>
-                            <section class="sec">
-                                <button class="reg b">Detail</button>
-                            </section>
+                                <span>Detail</span>
                         </div>
                     </a>
                 </li>
-                <!--/************le pop up detail***********/-->
-                <div class="pop">
-                    <span>✖</span>
 
-                    <h1>jQuery Pop Up</h1>
-
-                    <p>This is a random pop up, hopefully its not annoying.</p>
-                </div>
-                <!--/***************fin pop up***************/-->
                 <li class="work-post web-design web-development">
                     <img alt="" src="images/upload/work2.jpg">
                     <a href="project-single.html" class="hover-box">
@@ -310,14 +305,6 @@
         <div class="header-col">
             <h1><span>Contact</span></h1>
         </div>
-        <div class=" main-col">
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
-                elit.
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
-                tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat </p>
-        </div>
-
         <!-- Formulaire-->
         <div class="contact-container">
 
@@ -325,15 +312,18 @@
                 <form>
                     <div class="form-item">
                         <label for="name"></label>
-                        <input type="name" name="name" required="required" placeholder="nom">
+                        <input id="name" name="name" placeholder="Nom" required="required" class="form-control input-lg requiredField" type="text" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>">
+                        <?php echo "<p class='text-danger'>$Name</p>";?>
                     </div>
                     <div class="form-item">
                         <label for="email"></label>
-                        <input type="email" name="email" required="required" placeholder="email">
+                        <input id="email" name="email" placeholder="Email" required="required" class="form-control input-lg requiredField" type="email"  value="<?php echo isset($_POST['email']) ? $_POST['email']:''; ?>">
+                        <?php echo "<p class='text-danger'>$Email</p>";?>
                     </div>
                     <div class="form-item">
                         <label for="Message"></label>
-                        <textarea type="text" name="text" required="required" placeholder="text"></textarea>
+                        <textarea id="message" name="message"  placeholder="message" required="required" class="form-control input-lg requiredField" rows="6"><?php echo isset($_POST['message']) ? $_POST['message']:'';?></textarea>
+                        <?php echo "<p class='text-danger'>$Message</p>";?>
                     </div>
                     <div class="button-panel">
                         <input type="submit" class="button" title="Envoyez" value="Envoyez">

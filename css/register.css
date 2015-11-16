@@ -29,10 +29,6 @@ form {
 
 }
 
-#input1 {
-
-}
-
 form span {
     display: block;
     text-align: left;
@@ -68,7 +64,7 @@ form span a:hover {
 
 .formulaire a {
     -webkit-appearance: none;
-    background-color:  rgba(142,186,121,0.8);
+    background-color:  #f35a5c;
     border-radius: 4px;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
@@ -90,7 +86,7 @@ form span a:hover {
 
 #createAccount {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color:  rgba(142,186,121,0.8);
+    background-color: #f35a5c;
     color: #ffffff;
     width: 400px;
     cursor: pointer;
@@ -100,5 +96,5 @@ form span a:hover {
 }
 
 #createAccount:hover {
-    background-color: crimson;
+    background-color: #ef2b2d;
 }

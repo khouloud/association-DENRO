@@ -15,7 +15,7 @@ if (isset($_POST['fistname']) && isset($_POST['lastname']) && isset($_POST['emai
     $pwd = $_POST['pwd'];
 
 
-    $connexion = new mysqli('localhost', 'root', '', 'assocation');
+    $connexion = new mysqli('localhost', 'root', '', 'association');
     if ($connexion->connect_errno) {
         echo 'Erreur de connexion';
         exit;
